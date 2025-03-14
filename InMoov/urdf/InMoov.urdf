@@ -103,7 +103,7 @@
     <visual name="stand">
       <origin rpy="3.14159 -0.00000 3.14159" xyz="-0.00394 -0.00730 9.35280"/>
       <geometry>
-        <mesh filename="../meshes/stl/stand.stl" scale="0.00935 0.00935 0.00935"/>
+        <mesh filename="../meshes/stl/stand.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
   </link>
@@ -421,147 +421,147 @@
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.001">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.001.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.001.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.002">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.002.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.002.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.003">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.003.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.003.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.004">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.004.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.004.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.005">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.005.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.005.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.006">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.006.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.006.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.007">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.007.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.007.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.008">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.008.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.008.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.009">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.009.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.009.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.010">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.010.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.010.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.011">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.011.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.011.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.012">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.012.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.012.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.013">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.013.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.013.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.014">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.014.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.014.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.015">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.015.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.015.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.016">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.016.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.016.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.017">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.017.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.017.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.018">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.018.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.018.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.019">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.019.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.019.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.leftArm.rotate.full.020">
       <origin rpy="-0.00792 -0.00000 -0.00000" xyz="-2.08983 1.12391 -12.92101"/>
       <material name="[0131_Silver].001"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__564753.020.stl" scale="9.40619 9.40619 9.40619"/>
+        <mesh filename="../meshes/stl/G-__564753.020.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
   </link>
@@ -820,150 +820,150 @@
   </link>
   <link name="right_shoulder_z_link">
     <visual name="i01.rightArm.rotate.full">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.001">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.001.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.001.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.002">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.002.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.002.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.003">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.003.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.003.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.004">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.004.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.004.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.005">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.005.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.005.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.006">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.006.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.006.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.007">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.007.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.007.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.008">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.008.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.008.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.009">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.009.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.009.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.010">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.010.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.010.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.011">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.011.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.011.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.012">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.012.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.012.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.013">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.013.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.013.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.014">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.014.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.014.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.015">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.015.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.015.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.016">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.016.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.016.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.017">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.017.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.017.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.018">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.018.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.018.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.019">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.019.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.019.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.rotate.full.020">
-      <origin rpy="-0.00792 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
+      <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
       <geometry>
-        <mesh filename="../meshes/stl/G-__566220.020.stl" scale="-9.40619 -9.40619 -9.40619"/>
+        <mesh filename="../meshes/stl/G-__566220.020.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
   </link>

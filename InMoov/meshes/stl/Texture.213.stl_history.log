@@ -1,3 +1,3 @@
-Instantiated with filepath=None->None, scale=[1.000000238418579, 1.0000003576278687, 1.000000238418579], mesh=<bpy_struct, Mesh("Texture.213") at 0x7036ec2ace08>, meshname=Texture.213, material=None, mesh_orientation=None, {}
-->trying export of <bpy_struct, Mesh("Texture.213") at 0x7036ec2ace08> to /home/mrabot/phobos-models/InMoov/meshes/stl/Texture.213.stl
+Instantiated with filepath=None->None, scale=[1.000000238418579, 1.0000003576278687, 1.000000238418579], mesh=<bpy_struct, Mesh("Texture.213") at 0x71929893ee20>, meshname=Texture.213, material=None, mesh_orientation=None, {}
+->trying export of <bpy_struct, Mesh("Texture.213") at 0x71929893ee20> to /home/mrabot/phobos-models/InMoov/meshes/stl/Texture.213.stl
 ->wrote stl to /home/mrabot/phobos-models/InMoov/meshes/stl/Texture.213.stl from bpy_types.Mesh
