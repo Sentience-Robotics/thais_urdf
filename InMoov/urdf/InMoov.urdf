@@ -10,14 +10,14 @@
     <child link="torso_bottom_link"/>
   </joint>
   <joint name="i01.head.eyeLeft_link_joint" type="revolute">
-    <limit lower="-0.17453" upper="0.17453" effort="0.00000" velocity="0.78540"/>
+    <limit lower="-0.78530" upper="0.78530" effort="0.00000" velocity="0.78540"/>
     <origin rpy="0.00000 0.00000 -0.00000" xyz="0.29444 -1.07687 0.62487"/>
     <parent link="neck_link"/>
     <child link="i01.head.eyeLeft_link"/>
     <axis xyz="0.99994 0.00000 0.01111"/>
   </joint>
   <joint name="i01.head.eyeRight_link_joint" type="revolute">
-    <limit lower="-0.17453" upper="0.17453" effort="0.00000" velocity="0.78540"/>
+    <limit lower="-0.78530" upper="0.78530" effort="0.00000" velocity="0.78540"/>
     <origin rpy="0.00000 -0.00000 -0.00000" xyz="-0.29604 -1.08731 0.62487"/>
     <parent link="neck_link"/>
     <child link="i01.head.eyeRight_link"/>
@@ -965,13 +965,6 @@
         <mesh filename="../meshes/stl/Texture.270.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
-    <visual name="i01..leftArm.shoulder.full.018">
-      <origin rpy="0.06568 0.00000 0.00000" xyz="-1.46578 1.11459 -13.51522"/>
-      <material name="Material.390"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture.271.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
-    </visual>
   </link>
   <link name="left_shoulder_y_link">
     <visual name="i01.leftArm.omoplate.full">
@@ -1182,7 +1175,36 @@
       </geometry>
     </visual>
   </link>
-  <link name="neck_link"/>
+  <link name="neck_link">
+    <visual name="i01.head.nekHinge">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
+      <material name="Material.047"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Texture.015.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+    <visual name="i01.head.nekHinge.001">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
+      <material name="Material.047"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Texture.083.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+    <visual name="i01.head.nekHinge.002">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
+      <material name="Material.047"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Texture.084.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+    <visual name="i01.head.nekHinge.003">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
+      <material name="Material.047"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Texture.085.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
   <link name="right_elbow_x_link">
     <visual name="i01.right.bicep.full">
       <origin rpy="-0.00000 -0.00000 0.00000" xyz="2.08125 0.12073 -10.83653"/>
@@ -1345,13 +1367,6 @@
       <material name="Material.238"/>
       <geometry>
         <mesh filename="../meshes/stl/Texture.231.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
-    </visual>
-    <visual name="i01.rightArm.shoulder.full.010">
-      <origin rpy="-0.06568 -0.00000 -3.14159" xyz="1.46576 1.11459 -13.51522"/>
-      <material name="Material.238"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture.232.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
     <visual name="i01.rightArm.shoulder.full.011">
@@ -2447,6 +2462,9 @@
   </material>
   <material name="Material.046">
     <color rgba="1.00000 1.00000 1.00000 1.00000"/>
+  </material>
+  <material name="Material.047">
+    <color rgba="0.00000 0.00000 0.00000 1.00000"/>
   </material>
   <material name="Material.238">
     <color rgba="0.76078 0.75686 0.80000 1.00000"/>
