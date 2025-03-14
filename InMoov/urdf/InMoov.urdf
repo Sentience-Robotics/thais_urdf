@@ -13,7 +13,7 @@
     <limit lower="0" upper="0"/>
     <origin rpy="0.06589 -0.00000 -0.00000" xyz="0.00390 0.29788 4.29506"/>
     <parent link="torso_y_link"/>
-    <child link="i01.head.rollNeck_link"/>
+    <child link="neck_link"/>
   </joint>
   <joint name="i01.torso.midStom_link_joint" type="revolute">
     <limit lower="-2.35619" upper="2.35619" effort="0.00000" velocity="0.78540"/>
@@ -104,36 +104,6 @@
       <origin rpy="3.14159 -0.00000 3.14159" xyz="-0.00394 -0.00730 9.35280"/>
       <geometry>
         <mesh filename="../meshes/stl/stand.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
-    </visual>
-  </link>
-  <link name="i01.head.rollNeck_link">
-    <visual name="i01.head.nekHinge">
-      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
-      <material name="Material.047"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture.015.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
-    </visual>
-    <visual name="i01.head.nekHinge.001">
-      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
-      <material name="Material.047"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture.083.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
-    </visual>
-    <visual name="i01.head.nekHinge.002">
-      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
-      <material name="Material.047"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture.084.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
-    </visual>
-    <visual name="i01.head.nekHinge.003">
-      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
-      <material name="Material.047"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture.085.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
   </link>
@@ -578,6 +548,36 @@
       <material name="Material.602"/>
       <geometry>
         <mesh filename="../meshes/stl/Texture.235.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+  </link>
+  <link name="neck_link">
+    <visual name="i01.head.nekHinge">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
+      <material name="Material.047"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Texture.015.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+    <visual name="i01.head.nekHinge.001">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
+      <material name="Material.047"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Texture.083.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+    <visual name="i01.head.nekHinge.002">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
+      <material name="Material.047"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Texture.084.stl" scale="1.00000 1.00000 1.00000"/>
+      </geometry>
+    </visual>
+    <visual name="i01.head.nekHinge.003">
+      <origin rpy="0.00000 0.00000 -0.00000" xyz="-0.00144 -0.19608 -15.39810"/>
+      <material name="Material.047"/>
+      <geometry>
+        <mesh filename="../meshes/stl/Texture.085.stl" scale="1.00000 1.00000 1.00000"/>
       </geometry>
     </visual>
   </link>
