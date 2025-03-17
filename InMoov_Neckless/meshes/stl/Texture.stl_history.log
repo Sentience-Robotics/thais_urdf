@@ -1,3 +1,0 @@
-Instantiated with filepath=None->None, scale=[1.0, 1.0, 1.0], mesh=<bpy_struct, Mesh("Texture") at 0x7ca99e3f8020>, meshname=Texture, material=None, mesh_orientation=None, {}
-->trying export of <bpy_struct, Mesh("Texture") at 0x7ca99e3f8020> to /home/mrabot/phobos-models/InMoov_Neckless/meshes/stl/Texture.stl
-->wrote stl to /home/mrabot/phobos-models/InMoov_Neckless/meshes/stl/Texture.stl from bpy_types.Mesh
