@@ -1,39 +1,86 @@
 # InMoov URDF Project
 
-This repository provides a working URDF (Unified Robot Description Format) model for the InMoov robot platform.
+This repository provides a fully functional **Unified Robot Description Format (URDF)** model for the **InMoov** robot platform.
 
-## Overview
+## 📌 Overview
 
-InMoov is an open-source, 3D-printed, life-size humanoid robot created by Gael Langevin. This project aims to provide a complete and accurate URDF description of the InMoov robot for use in simulation and robotics development environments.
+**InMoov** is an open-source, 3D-printed, life-size humanoid robot created by **Gael Langevin**. This project aims to deliver a comprehensive and precise **URDF description** of the InMoov robot for use in **simulation** and **robotics development** environments.
 
-## Features
+The URDF file was created using **[Blender](https://www.blender.org/)** (version **4.3.2**) with the **[Phobos](https://github.com/dfki-ric/phobos)** add-on.  
+Currently, the export uses **STL** files, but you can export in other formats directly from Blender using **Phobos**.
 
-- Complete URDF model of the InMoov robot
-- Accurate joint configurations and limits
-- Compatible with ROS (Robot Operating System)
-- Suitable for simulation in Gazebo, RViz, and other robotics simulators
+---
 
-## Contributing
+## 🚀 Features
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+✔️ **Complete URDF model** of the InMoov robot  
+✔️ **Accurate joint configurations** and limits  
+✔️ **ROS-compatible** (Robot Operating System)  
+✔️ **Ready for simulation** in **Gazebo**, **RViz**, and other robotics environments
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+---
 
-## License
+## 📖 Documentation
 
-This project is licensed under the GPL V3 License - see the [LICENSE](LICENSE) file for details.
+For more details on **creation processes**, **troubleshooting**, and other guidance, visit the **[Sentience Robotics documentation](https://docs.sentience-robotics.tech/s/master/p/urdf-NyIKx8PezV)**.
 
-## Acknowledgments
+---
 
-- [InMoov Project](http://inmoov.fr/) - Original InMoov robot design by Gael Langevin
-- All contributors to the InMoov community
+## 📂 Files & Folder Structure
 
-## Contact
+📦 InMoov-URDF-Project<br>
+├── 📄 URDF.blend # Blender file with Phobos configurations<br>
+├── 📄 Stand.blend # Blender file containing a stand for the upper body<br>
+├── 📂 InMoov # Folder containing the URDF export and STL meshes<br>
 
-You can contact us via email at [contact@sentience-robotics.tech](mailto:contact@sentience-robotics.tech)
+---
 
-To find more about Sentience Robotics work, please visit our github organization [Sentience Robotics](https://github.com/sentience-robotics)
+## 🔍 Help Us Improve the InMoov URDF
+
+We currently include **handsI1** and **headI1**, but we aim to integrate the latest **headI2** and **handsI2** models.
+
+📢 **We need your help!**  
+If you have access to **headI2** and **handsI2** Blender files or related resources, please contribute to this open-source effort.
+
+Let's **enhance** the accuracy and usability of the **InMoov simulation** together! 🚀
+
+Feel free to share any leads or files with us.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Follow these steps to contribute:
+
+- 1️⃣ **Fork** the repository<br>
+- 2️⃣ **Create a feature branch:**<br>
+    ```bash
+    git switch -C <feat|evol|fix>/<amzing-feature>
+    ```
+- 3️⃣ **Commit your changes:**<br>
+    ```bash
+    git commit -sm '<feat|evol|fix>/<amzing-feature>'
+    ```
+- 4️⃣ **Push to your branch:**<br>
+    ```bash
+    git push origin <feat|evol|fix>/<amzing-feature>
+    ```
+- 5️⃣ **Open a Pull Request**<br>
+
+Please ensure that:
+1. your **Pull Request & commits** respects the indicated **naming convention**
+2. your commits are **signed** (use `-s` flag)
+
+## 📜 License
+
+This project is licensed under the **GNU GPL V3 License**. See the [LICENSE](LICENSE) file for details.
+
+## 🙌 Acknowledgments
+
+- 🎉 [InMoov Project](https://inmoov.fr/) – Original design by Gael Langevin<br>
+- 🎉 **All contributors** to the InMoov community<br>
+
+## 📬 Contact
+
+- 📧 Email: [contact@sentience-robotics.tech](mailto:contact@sentience-robotics.tech)<br>
+- 🌍 GitHub Organization: [Sentience Robotics](https://github.com/sentience-robotics)<br>
