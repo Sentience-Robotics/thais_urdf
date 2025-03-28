@@ -1046,16 +1046,10 @@
     <visual name="i01..leftArm.shoulder.full.008">
       <origin rpy="0.06568 0.00000 0.00000" xyz="-1.46578 1.11459 -13.51522"/>
       <material name="Material.390"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture261.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
     </visual>
     <visual name="i01..leftArm.shoulder.full.009">
       <origin rpy="0.06568 0.00000 0.00000" xyz="-1.46578 1.11459 -13.51522"/>
       <material name="Material.390"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture262.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
     </visual>
     <visual name="i01..leftArm.shoulder.full.010">
       <origin rpy="0.06568 0.00000 0.00000" xyz="-1.46578 1.11459 -13.51522"/>
@@ -1074,16 +1068,10 @@
     <visual name="i01..leftArm.shoulder.full.012">
       <origin rpy="0.06568 0.00000 0.00000" xyz="-1.46578 1.11459 -13.51522"/>
       <material name="Material.390"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture265.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
     </visual>
     <visual name="i01..leftArm.shoulder.full.013">
       <origin rpy="0.06568 0.00000 0.00000" xyz="-1.46578 1.11459 -13.51522"/>
       <material name="Material.390"/>
-      <geometry>
-        <mesh filename="../meshes/stl/Texture266.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
     </visual>
     <visual name="i01..leftArm.shoulder.full.014">
       <origin rpy="0.06568 0.00000 0.00000" xyz="-1.46578 1.11459 -13.51522"/>
