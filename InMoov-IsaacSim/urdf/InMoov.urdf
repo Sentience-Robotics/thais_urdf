@@ -1715,9 +1715,6 @@
     <visual name="i01.rightArm.rotate.full.020">
       <origin rpy="3.13367 0.00000 0.00000" xyz="2.08983 1.12392 -12.92101"/>
       <material name="[0131_Silver]"/>
-      <geometry>
-        <mesh filename="../meshes/stl/G566220_020.stl" scale="1.00000 1.00000 1.00000"/>
-      </geometry>
     </visual>
   </link>
   <link name="right_wrist_z_link">
