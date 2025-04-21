@@ -328,10 +328,6 @@
                    default_pos="null"
                    enabled="false"/>
 
-<!-- =============================================== -->
-<!-- HEAD Configuration                              -->
-<!-- =============================================== -->
-
 <!-- Head rotation -->
 
 <!-- Head rotation servo - Controls rotation of the head left/right -->
@@ -340,10 +336,14 @@
                    board="rp2040_torso_head"
                    pin="6"
                    type="270"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
+                   min_limit="0"
+                   max_limit="270"
+                   default_pos="135"
                    enabled="false"/>
+
+<!-- =============================================== -->
+<!-- HEAD Configuration (except head rotation)       -->
+<!-- =============================================== -->
 
 <!-- Jaw movement -->
 
@@ -351,11 +351,11 @@
 <xacro:servo_motor name="jaw"
                    joint_name="jaw_joint"
                    board="rp2040_torso_head"
-                   pin="7"
+                   pin="0"
                    type="300"
                    min_limit="null"
                    max_limit="null"
-                   default_pos="null"
+                   default_pos="180"
                    enabled="false"/>
 
 <!-- Cheek movement servos -->
@@ -364,23 +364,24 @@
 <xacro:servo_motor name="left_cheek"
                    joint_name="left_cheek_joint"
                    board="rp2040_torso_head"
-                   pin="8"
+                   pin="1"
                    type="180"
                    min_limit="null"
                    max_limit="null"
-                   default_pos="null"
+                   default_pos="90"
                    enabled="false"/>
 
 <!-- Right cheek puller servo - Controls right cheek movement for expressions -->
 <xacro:servo_motor name="right_cheek"
                    joint_name="right_cheek_joint"
                    board="rp2040_torso_head"
-                   pin="9"
+                   pin="2"
                    type="180"
                    min_limit="null"
                    max_limit="null"
-                   default_pos="null"
+                   default_pos="90"
                    enabled="false"/>
+
 
 <!-- Lip movement servo -->
 
@@ -388,127 +389,11 @@
 <xacro:servo_motor name="upper_lip"
                    joint_name="upper_lip_joint"
                    board="rp2040_torso_head"
-                   pin="10"
+                   pin="3"
                    type="180"
                    min_limit="null"
                    max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Eyelid servos -->
-
-<!-- Upper left eyelid servo - Controls blinking and expressions for left eye -->
-<xacro:servo_motor name="upper_left_eyelid"
-                   joint_name="upper_left_eyelid_joint"
-                   board="rp2040_torso_head"
-                   pin="11"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Upper right eyelid servo - Controls blinking and expressions for right eye -->
-<xacro:servo_motor name="upper_right_eyelid"
-                   joint_name="upper_right_eyelid_joint"
-                   board="rp2040_torso_head"
-                   pin="12"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Lower left eyelid servo - Controls lower eyelid for expressions -->
-<xacro:servo_motor name="lower_left_eyelid"
-                   joint_name="lower_left_eyelid_joint"
-                   board="rp2040_torso_head"
-                   pin="13"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Lower right eyelid servo - Controls lower eyelid for expressions -->
-<xacro:servo_motor name="lower_right_eyelid"
-                   joint_name="lower_right_eyelid_joint"
-                   board="rp2040_torso_head"
-                   pin="14"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Eye movement servos -->
-
-<!-- Left eye horizontal servo - Controls left eye horizontal movement -->
-<xacro:servo_motor name="left_eye_horizontal"
-                   joint_name="left_eye_horizontal_joint"
-                   board="rp2040_torso_head"
-                   pin="15"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Left eye vertical servo - Controls left eye vertical movement -->
-<xacro:servo_motor name="left_eye_vertical"
-                   joint_name="left_eye_vertical_joint"
-                   board="rp2040_torso_head"
-                   pin="16"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Right eye horizontal servo - Controls right eye horizontal movement -->
-<xacro:servo_motor name="right_eye_horizontal"
-                   joint_name="right_eye_horizontal_joint"
-                   board="rp2040_torso_head"
-                   pin="17"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Right eye vertical servo - Controls right eye vertical movement -->
-<xacro:servo_motor name="right_eye_vertical"
-                   joint_name="right_eye_vertical_joint"
-                   board="rp2040_torso_head"
-                   pin="18"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Eyebrow servos -->
-
-<!-- Left eyebrow servo - Controls left eyebrow movement for expressions -->
-<xacro:servo_motor name="left_eyebrow"
-                   joint_name="left_eyebrow_joint"
-                   board="rp2040_torso_head"
-                   pin="19"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
-
-<!-- Right eyebrow servo - Controls right eyebrow movement for expressions -->
-<xacro:servo_motor name="right_eyebrow"
-                   joint_name="right_eyebrow_joint"
-                   board="rp2040_torso_head"
-                   pin="20"
-                   type="180"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
+                   default_pos="90"
                    enabled="false"/>
 
 <!-- Forehead servos -->
@@ -517,20 +402,137 @@
 <xacro:servo_motor name="left_forehead"
                    joint_name="left_forehead_joint"
                    board="rp2040_torso_head"
-                   pin="21"
+                   pin="4"
                    type="180"
                    min_limit="null"
                    max_limit="null"
-                   default_pos="null"
+                   default_pos="90"
                    enabled="false"/>
 
 <!-- Right forehead servo - Controls right forehead movement for expressions -->
 <xacro:servo_motor name="right_forehead"
                    joint_name="right_forehead_joint"
                    board="rp2040_torso_head"
-                   pin="22"
+                   pin="5"
                    type="180"
                    min_limit="null"
                    max_limit="null"
-                   default_pos="null"
+                   default_pos="90"
                    enabled="false"/> 
+
+<!-- Eyebrow servos -->
+
+<!-- Left eyebrow servo - Controls left eyebrow movement for expressions -->
+<xacro:servo_motor name="left_eyebrow"
+                   joint_name="left_eyebrow_joint"
+                   board="rp2040_torso_head"
+                   pin="6"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
+
+<!-- Right eyebrow servo - Controls right eyebrow movement for expressions -->
+<xacro:servo_motor name="right_eyebrow"
+                   joint_name="right_eyebrow_joint"
+                   board="rp2040_torso_head"
+                   pin="7"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
+
+<!-- Eyelid servos -->
+
+<!-- Upper left eyelid servo - Controls blinking and expressions for left eye -->
+<xacro:servo_motor name="upper_left_eyelid"
+                   joint_name="upper_left_eyelid_joint"
+                   board="rp2040_torso_head"
+                   pin="8"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
+
+<!-- Lower left eyelid servo - Controls lower eyelid for expressions -->
+<xacro:servo_motor name="lower_left_eyelid"
+                   joint_name="lower_left_eyelid_joint"
+                   board="rp2040_torso_head"
+                   pin="9"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
+
+<!-- Upper right eyelid servo - Controls blinking and expressions for right eye -->
+<xacro:servo_motor name="upper_right_eyelid"
+                   joint_name="upper_right_eyelid_joint"
+                   board="rp2040_torso_head"
+                   pin="10"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
+
+
+<!-- Lower right eyelid servo - Controls lower eyelid for expressions -->
+<xacro:servo_motor name="lower_right_eyelid"
+                   joint_name="lower_right_eyelid_joint"
+                   board="rp2040_torso_head"
+                   pin="11"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
+
+<!-- Eye movement servos -->
+
+<!-- Left eye horizontal servo - Controls left eye horizontal movement -->
+<xacro:servo_motor name="left_eye_horizontal"
+                   joint_name="left_eye_horizontal_joint"
+                   board="rp2040_torso_head"
+                   pin="12"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
+
+<!-- Left eye vertical servo - Controls left eye vertical movement -->
+<xacro:servo_motor name="left_eye_vertical"
+                   joint_name="left_eye_vertical_joint"
+                   board="rp2040_torso_head"
+                   pin="13"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
+
+<!-- Right eye horizontal servo - Controls right eye horizontal movement -->
+<xacro:servo_motor name="right_eye_horizontal"
+                   joint_name="right_eye_horizontal_joint"
+                   board="rp2040_torso_head"
+                   pin="14"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
+
+<!-- Right eye vertical servo - Controls right eye vertical movement -->
+<xacro:servo_motor name="right_eye_vertical"
+                   joint_name="right_eye_vertical_joint"
+                   board="rp2040_torso_head"
+                   pin="15"
+                   type="180"
+                   min_limit="null"
+                   max_limit="null"
+                   default_pos="90"
+                   enabled="false"/>
