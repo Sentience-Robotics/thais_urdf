@@ -151,56 +151,56 @@
 <xacro:servo_motor name="right_thumb"
                    joint_name="right_thumb_joint"
                    board="rp2040_right_arm"
-                   pin="0"
+                   pin="14"
                    type="300"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
+                   min_limit="0"
+                   max_limit="150"
+                   default_pos="75"
+                   enabled="true"/>
 
 <!-- Right index finger servo - Controls index finger flexion/extension -->
 <xacro:servo_motor name="right_index"
                    joint_name="right_index_joint"
                    board="rp2040_right_arm"
-                   pin="1"
+                   pin="15"
                    type="300"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
+                   min_limit="0"
+                   max_limit="150"
+                   default_pos="75"
+                   enabled="true"/>
 
 <!-- Right middle finger servo - Controls middle finger flexion/extension -->
 <xacro:servo_motor name="right_middle"
                    joint_name="right_middle_joint"
                    board="rp2040_right_arm"
-                   pin="2"
+                   pin="16"
                    type="300"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
+                   min_limit="0"
+                   max_limit="150"
+                   default_pos="75"
+                   enabled="true"/>
 
 <!-- Right ring finger servo - Controls ring finger flexion/extension -->
 <xacro:servo_motor name="right_ring"
                    joint_name="right_ring_joint"
                    board="rp2040_right_arm"
-                   pin="3"
+                   pin="17"
                    type="300"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
+                   min_limit="0"
+                   max_limit="150"
+                   default_pos="75"
+                   enabled="true"/>
 
 <!-- Right pinky finger servo - Controls pinky finger flexion/extension -->
 <xacro:servo_motor name="right_pinky"
                    joint_name="right_pinky_joint"
                    board="rp2040_right_arm"
-                   pin="4"
+                   pin="18"
                    type="300"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
+                   min_limit="0"
+                   max_limit="150"
+                   default_pos="75"
+                   enabled="true"/>
 
 <!-- Wrist -->
 
@@ -208,12 +208,12 @@
 <xacro:servo_motor name="right_wrist"
                    joint_name="right_wrist_joint"
                    board="rp2040_right_arm"
-                   pin="5"
+                   pin="13"
                    type="300"
-                   min_limit="null"
-                   max_limit="null"
-                   default_pos="null"
-                   enabled="false"/>
+                   min_limit="0"
+                   max_limit="300"
+                   default_pos="150"
+                   enabled="true"/>
 
 <!-- Arm joints -->
 
