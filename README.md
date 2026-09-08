@@ -1,6 +1,8 @@
 # thais_urdf
 
-ROS 2 **Humble** package with the **InMoov-derived** robot description used by Lucy: **URDF/xacro**, **DAE meshes**, **ros2_control** blocks, **Gazebo (gz-sim) physics**, an **RViz** layout, and **launch files** for ros2_control + RViz / Gazebo.
+Fork of `inmoov_urdf` for the **Thais** robot: same description/sim stack, with Thais-specific hardware presets under `config/hardware/configs/` (e.g. `thais_10_05_2026.yaml`).
+
+ROS 2 **Jazzy** (Ubuntu 24.04) package with the **InMoov-derived** robot description used by Lucy: **URDF/xacro**, **DAE meshes**, **ros2_control** blocks, **Gazebo (gz-sim) physics**, an **RViz** layout, and **launch files** for ros2_control + RViz / Gazebo.
 
 The web control panel (rosbridge + `/config/*` services) is **not** started from here — use `lucy_bringup` (`lucy.launch.py`) or `web_ros_api.launch.py` from `lucy_ros_packages`.
 
@@ -34,10 +36,11 @@ thais_urdf/
 │   │   ├── urdf/robot_description.urdf.xacro     # links, joints, visuals, collisions, materials
 │   │   └── meshes/dae/*.dae                      # 290 Collada meshes (visual + collision)
 │   ├── ros2_control/
-│   │   ├── inmoov_ros2_control.xacro             # hardware interfaces (real / sim / mock)
-│   │   └── inmoov_gz_ros2_control.xacro          # gz_ros2_control plugin (sim only)
+│   │   └── inmoov_ros2_control.xacro             # hardware interfaces (real / mock)
 │   └── gazebo/
-│       └── inmoov_gazebo_physics.xacro           # static / friction / self_collide (sim only)
+│       ├── inmoov_gazebo_physics.xacro           # static / friction / self_collide (sim only)
+│       ├── gazebo.xacro                          # generated gz_ros2_control plugin + camera sensors (sim only)
+│       └── gazebo_bridge.yaml                    # generated ros_gz_bridge topic map (sim only)
 ├── worlds/default.sdf       # minimal world used by gazebo.launch.py
 ├── scripts/                 # inject_collisions.py, autocalibrate_joint_limits.py, scale_xacro_origins.py
 ├── test/                    # pytest suite (xacro smoke, YAML, collisions, joint limits)
@@ -57,7 +60,7 @@ thais_urdf/
 
 ## Requirements
 
-ROS 2 Humble plus: `robot_state_publisher`, `controller_manager`, `rviz2`, `ros_gz_sim`, `ros_gz_bridge`, `gz_ros2_control`, `launch_ros`, `lucy_ros2_control`. The auto-cal script also needs **PyBullet** (already in the `lucy_ros2:humble` image, `pip` otherwise).
+ROS 2 Jazzy (Ubuntu 24.04) plus: `robot_state_publisher`, `controller_manager`, `rviz2`, `ros_gz_sim`, `ros_gz_bridge`, `gz_ros2_control`, `launch_ros`, `lucy_ros2_control`. The auto-cal script also needs **PyBullet** (already in the `lucy_ros2:jazzy` image, `pip` otherwise).
 
 ```bash
 rosdep install --from-paths src --ignore-src -r -y
@@ -68,7 +71,7 @@ For the control panel, also build `lucy_bringup` + `lucy_config_pipeline` (pulle
 ## Build
 
 ```bash
-source /opt/ros/humble/setup.bash
+source /opt/ros/jazzy/setup.bash
 cd lucy_ws
 colcon build --symlink-install --packages-select thais_urdf lucy_ros2_control
 source install/setup.bash
