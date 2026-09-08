@@ -1,5 +1,7 @@
 # inmoov_urdf
 
+Fork of `inmoov_urdf` for the **Thais** robot: same description/sim stack, with Thais-specific hardware presets under `config/hardware/configs/` (e.g. `thais_10_05_2026.yaml`).
+
 ROS 2 **Jazzy** (Ubuntu 24.04) package with the **InMoov-derived** robot description used by Lucy: **URDF/xacro**, **DAE meshes**, **ros2_control** blocks, **Gazebo (gz-sim) physics**, an **RViz** layout, and **launch files** for ros2_control + RViz / Gazebo.
 
 The web control panel (rosbridge + `/config/*` services) is **not** started from here — use `lucy_bringup` (`lucy.launch.py`) or `web_ros_api.launch.py` from `lucy_ros_packages`.
