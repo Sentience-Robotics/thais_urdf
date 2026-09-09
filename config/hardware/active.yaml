@@ -76,8 +76,8 @@ cameras:
     link: 'i01.head.eyeLeft_link'
 
 firmware:
-  source_dir: micro_ros_raspberrypi_pico_sdk
-  build_dir: build
+  source_dir: lucy_embedded_firmware
+  build_dir: build/firmware
 controller_manager:
   update_rate: 100
 boards:
@@ -85,7 +85,7 @@ boards:
     serial_id: E6617C93E3858429
     board_class: internal_servo_only
     internal_servo_slots: 18
-    firmware_target: pico_micro_ros_left_arm
+    firmware_target: lucy_left_arm
     compile_definition: USE_LEFT_ARM
     topic_actuators: actuators/left_arm
     topic_sensors: sensors/left_arm
@@ -96,7 +96,7 @@ boards:
     serial_id: E6617C93E37A6629
     board_class: internal_servo_only
     internal_servo_slots: 18
-    firmware_target: pico_micro_ros_right_arm
+    firmware_target: lucy_right_arm
     compile_definition: USE_RIGHT_ARM
     topic_actuators: actuators/right_arm
     topic_sensors: sensors/right_arm
@@ -107,7 +107,7 @@ boards:
     serial_id: ''
     board_class: internal_servo_i2c_pwm
     internal_servo_slots: 16
-    firmware_target: pico_micro_ros_torso
+    firmware_target: lucy_torso
     compile_definition: USE_TORSO
     topic_actuators: actuators/torso
     topic_sensors: sensors/torso
