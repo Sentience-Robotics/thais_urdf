@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-and-test:
-    name: Build and test (thais_urdf)
+    name: Build and test (inmoov_urdf)
     runs-on: ubuntu-latest
     container:
       image: osrf/ros:jazzy-desktop
@@ -49,7 +49,7 @@ jobs:
         run: |
           set -e
           mkdir -p "${COLCON_WS}/src"
-          cp -a "${GITHUB_WORKSPACE}" "${COLCON_WS}/src/thais_urdf"
+          cp -a "${GITHUB_WORKSPACE}" "${COLCON_WS}/src/inmoov_urdf"
 
       - name: rosdep install
         working-directory: ${{ env.COLCON_WS }}
@@ -66,7 +66,7 @@ jobs:
         run: |
           source /opt/ros/jazzy/setup.bash
           colcon build --symlink-install \
-            --packages-select thais_urdf \
+            --packages-select inmoov_urdf \
             --cmake-args -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
 
       - name: colcon test
@@ -76,7 +76,7 @@ jobs:
           source /opt/ros/jazzy/setup.bash
           source install/setup.bash
           colcon test \
-            --packages-select thais_urdf \
+            --packages-select inmoov_urdf \
             --event-handlers console_direct+ \
             --pytest-args "--tb=short -vv"
 
@@ -97,11 +97,11 @@ jobs:
           source /opt/ros/jazzy/setup.bash
           source install/setup.bash
           mkdir -p build/coverage_reports
-          python3 -m pytest src/thais_urdf/test/ \
-            --cov=src/thais_urdf/launch \
-            --cov=src/thais_urdf/test \
-            --cov-report=xml:build/coverage_reports/thais_urdf.xml \
-            --cov-report=html:build/coverage_reports/html_thais_urdf \
+          python3 -m pytest src/inmoov_urdf/test/ \
+            --cov=src/inmoov_urdf/launch \
+            --cov=src/inmoov_urdf/test \
+            --cov-report=xml:build/coverage_reports/inmoov_urdf.xml \
+            --cov-report=html:build/coverage_reports/html_inmoov_urdf \
             --cov-report=term-missing \
             --cov-branch
 
@@ -110,15 +110,15 @@ jobs:
         if: success()
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          files: ${{ env.COLCON_WS }}/build/coverage_reports/thais_urdf.xml
-          flags: thais_urdf
-          name: thais_urdf
+          files: ${{ env.COLCON_WS }}/build/coverage_reports/inmoov_urdf.xml
+          flags: inmoov_urdf
+          name: inmoov_urdf
           fail_ci_if_error: false
 
       - name: Upload coverage artifacts (XML + HTML)
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: coverage-thais_urdf
+          name: coverage-inmoov_urdf
           path: ${{ env.COLCON_WS }}/build/coverage_reports/
           retention-days: 14
