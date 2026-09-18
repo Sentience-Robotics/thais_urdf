@@ -154,7 +154,7 @@ Practical consequences:
 
 ### 6.5 Joint limits
 
-Limits are per-joint, in radians, on the `<limit lower="…" upper="…"/>` of each actuated joint in `robot_description.urdf.xacro`. They are **decoupled** from `config/hardware/active.yaml`: the hardware mapping handles servo↔URDF conversion (`offset_deg`, `direction`, `scale` — see [hardware_mapping.md](hardware_mapping.md)).
+Limits are per-joint, in radians, on the `<limit lower="…" upper="…"/>` of each actuated joint in `robot_description.urdf.xacro`. They are **decoupled** from `config/hardware/active.yaml`: the hardware mapping handles servo↔URDF conversion (`offset_rad`, `direction`, `scale` — see [hardware_mapping.md](hardware_mapping.md)).
 
 `lucy_config_generator` copies the `<limit lower upper>` of every actuated joint into the `<command_interface name="position">` block of the regenerated `inmoov_ros2_control.xacro` as `<param name="min/max"/>` (radians). At runtime, `LucySystemHardware` clamps `hw_commands_` to that envelope before the actuator mapping. Stock `gz_ros2_control` does **not** apply this clamp; rely on URDF `<limit>` enforcement coming from the spawned model when running in Gazebo.
 
@@ -273,11 +273,20 @@ This restarts `robot_state_publisher` + `ros2_control` with the new URDF. **Cave
 
 ## 9. Hardware mapping (pointer)
 
-`config/hardware/active.yaml` is the **single source of truth** for boards, actuators, sensors, and the URDF↔servo calibration (`offset_deg`, `direction`, `scale`). The schema, semantics, and validation rules live in [hardware_mapping.md](hardware_mapping.md). The control panel and `lucy_config_generator` write here; never hand-edit during a running pipeline.
+`config/hardware/active.yaml` is the **single source of truth** for boards, actuators, sensors, and the URDF↔servo calibration (`offset_rad`, `direction`, `scale`). Angles are **radians** in YAML. See [hardware_mapping.md](hardware_mapping.md).
 
-Named presets under `config/hardware/configs/` are snapshots; `config/hardware/active_meta.yaml` records which preset is active and whether it was flashed.
+### Reconciling from upstream `inmoov_urdf`
+
+`thais_urdf` is a Lucy fork of `inmoov_urdf`. Prefer this order:
+
+1. Land schema / rad / Rust-firmware changes on **`inmoov_urdf`** first.
+2. Merge or cherry-pick into **`thais_urdf`**, then re-apply Thais-only fields (`serial_id`, enabled actuators, camera links, named presets such as `thais_10_05_2026.yaml`).
+3. Regenerate `description/ros2_control/inmoov_ros2_control.xacro` and `config/controllers.yaml`.
+
+`firmware.source_dir` is `lucy_embedded_firmware` with UF2 targets `lucy_left_arm` / `lucy_right_arm` / `lucy_torso`.
 
 For InMoov-i2 head extension, see [inmoov_i2.md](inmoov_i2.md).
+
 
 ---
 
