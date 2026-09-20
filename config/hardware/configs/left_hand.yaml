@@ -33,48 +33,42 @@ ignore_urdf_joints:
   - i01.rightHand.thumb1_link_joint
   - i01.rightHand.thumb3_link_joint
   - i01.rightHand.wrist.001_link_joint
-
 cameras:
-  - id: 'ext_camera'
-    name: 'External USB Webcam'
-    topic: '/ext_camera/jpg'
-    compressed_topic: '/ext_camera/jpg/compressed'
-    message_type: 'sensor_msgs/msg/CompressedImage'
+  - id: ext_camera
+    name: External USB Webcam
+    topic: /ext_camera/jpg
+    compressed_topic: /ext_camera/jpg/compressed
+    message_type: sensor_msgs/msg/CompressedImage
     external: true
-    sim_gz_topic: '/world/default/camera'
-
-  - realsense-rgb:
-    name: 'Realsense RGB'
-    topic: '/realsense/realsense2_camera/color/image_raw'
-    compressed_topic: '/realsense/realsense2_camera/color/image_raw/compressed'
-    message_type: 'sensor_msgs/msg/CompressedImage'
+    sim_gz_topic: /world/default/camera
+  - realsense-rgb: null
+    name: Realsense RGB
+    topic: /realsense/realsense2_camera/color/image_raw
+    compressed_topic: /realsense/realsense2_camera/color/image_raw/compressed
+    message_type: sensor_msgs/msg/CompressedImage
     external: false
-    link: 'i01.head.eyeLeft_link'
-
-  - realsense-aligned-depth:
-    name: 'Realsense Aligned Depth'
-    topic: '/realsense/realsense2_camera/aligned_depth_to_color/image_raw'
-    compressed_topic: '/realsense/realsense2_camera/aligned_depth_to_color/image_raw/compressed'
-    message_type: 'sensor_msgs/msg/CompressedImage'
+    link: i01.head.eyeLeft_link
+  - realsense-aligned-depth: null
+    name: Realsense Aligned Depth
+    topic: /realsense/realsense2_camera/aligned_depth_to_color/image_raw
+    compressed_topic: /realsense/realsense2_camera/aligned_depth_to_color/image_raw/compressed
+    message_type: sensor_msgs/msg/CompressedImage
     external: false
-    link: 'i01.head.eyeLeft_link'
-
-  - left_eye_camera:
-    name: 'Left eye webcam'
-    topic: '/camera/internal/left_eye/jpg'
-    compressed_topic: '/camera/internal/left_eye/jpg/compressed'
-    message_type: 'sensor_msgs/msg/CompressedImage'
+    link: i01.head.eyeLeft_link
+  - left_eye_camera: null
+    name: Left eye webcam
+    topic: /camera/internal/left_eye/jpg
+    compressed_topic: /camera/internal/left_eye/jpg/compressed
+    message_type: sensor_msgs/msg/CompressedImage
     external: false
-    link: 'i01.head.eyeRight_link'
-
-  - right_eye_camera:
-    name: 'Right eye webcam'
-    topic: '/camera/internal/right_eye/jpg'
-    compressed_topic: '/camera/internal/right_eye/jpg/compressed'
-    message_type: 'sensor_msgs/msg/CompressedImage'
+    link: i01.head.eyeRight_link
+  - right_eye_camera: null
+    name: Right eye webcam
+    topic: /camera/internal/right_eye/jpg
+    compressed_topic: /camera/internal/right_eye/jpg/compressed
+    message_type: sensor_msgs/msg/CompressedImage
     external: false
-    link: 'i01.head.eyeLeft_link'
-
+    link: i01.head.eyeLeft_link
 firmware:
   source_dir: lucy_embedded_firmware
   build_dir: build/firmware
@@ -147,7 +141,7 @@ actuators:
   - id: left_shoulder_z
     urdf_joint: left_shoulder_z_link_joint
     board: rp2040_left_arm
-    virtual_pin: 0
+    virtual_pin: 6
     physical_pin: 10
     servo_type: '270'
     offset_rad: 1.5708
@@ -160,7 +154,7 @@ actuators:
   - id: left_shoulder_x
     urdf_joint: left_shoulder_x_link_joint
     board: rp2040_left_arm
-    virtual_pin: 1
+    virtual_pin: 7
     physical_pin: 11
     servo_type: '270'
     offset_rad: 0
@@ -173,7 +167,7 @@ actuators:
   - id: left_elbow_x
     urdf_joint: left_elbow_x_link_joint
     board: rp2040_left_arm
-    virtual_pin: 2
+    virtual_pin: 8
     physical_pin: 12
     servo_type: '270'
     offset_rad: 0
@@ -186,21 +180,21 @@ actuators:
   - id: left_wrist_z
     urdf_joint: left_wrist_z_link_joint
     board: rp2040_left_arm
-    virtual_pin: 3
-    physical_pin: 13
+    virtual_pin: 5
+    physical_pin: 6
     servo_type: '300'
     offset_rad: 2.61799
     direction: 1
     scale: 1
     servo_min_rad: 0
     servo_max_rad: 5.23599
-    servo_default_rad: 2.61799
-    enabled: false
+    servo_default_rad: 0
+    enabled: true
   - id: left_thumb
     urdf_joint: i01.leftHand.thumb_link_joint
     board: rp2040_left_arm
-    virtual_pin: 4
-    physical_pin: 14
+    virtual_pin: 0
+    physical_pin: 1
     servo_type: '300'
     offset_rad: 0
     direction: 1
@@ -208,12 +202,12 @@ actuators:
     servo_min_rad: 0
     servo_max_rad: 3.14159
     servo_default_rad: 0
-    enabled: false
+    enabled: true
   - id: left_index
     urdf_joint: i01.leftHand.index_link_joint
     board: rp2040_left_arm
-    virtual_pin: 5
-    physical_pin: 15
+    virtual_pin: 1
+    physical_pin: 2
     servo_type: '300'
     offset_rad: 0
     direction: 1
@@ -225,8 +219,8 @@ actuators:
   - id: left_majeure
     urdf_joint: i01.leftHand.majeure_link_joint
     board: rp2040_left_arm
-    virtual_pin: 6
-    physical_pin: 16
+    virtual_pin: 2
+    physical_pin: 3
     servo_type: '300'
     offset_rad: 0
     direction: 1
@@ -234,12 +228,12 @@ actuators:
     servo_min_rad: 0
     servo_max_rad: 3.14159
     servo_default_rad: 0
-    enabled: false
+    enabled: true
   - id: left_ring
     urdf_joint: i01.leftHand.ringFinger_link_joint
     board: rp2040_left_arm
-    virtual_pin: 7
-    physical_pin: 17
+    virtual_pin: 3
+    physical_pin: 4
     servo_type: '300'
     offset_rad: 0
     direction: 1
@@ -247,20 +241,20 @@ actuators:
     servo_min_rad: 0
     servo_max_rad: 3.14159
     servo_default_rad: 0
-    enabled: false
+    enabled: true
   - id: left_pinky
     urdf_joint: i01.leftHand.pinky_link_joint
     board: rp2040_left_arm
-    virtual_pin: 8
-    physical_pin: 18
+    virtual_pin: 4
+    physical_pin: 5
     servo_type: '300'
     offset_rad: 0
     direction: 1
-    scale: 0.25
+    scale: 1
     servo_min_rad: 0
-    servo_max_rad: 3.14159
+    servo_max_rad: 3.141592653589793
     servo_default_rad: 0
-    enabled: false
+    enabled: true
   - id: right_shoulder_z
     urdf_joint: right_shoulder_z_link_joint
     board: rp2040_right_arm
